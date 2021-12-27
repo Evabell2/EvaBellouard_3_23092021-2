@@ -72,11 +72,13 @@ nav {
   padding: 3%;
   text-align: center;
   background: white;
+  -webkit-box-shadow: 0px -4px 15px -1px #000000;
+          box-shadow: 0px -4px 15px -1px #000000;
 }
 
 nav img {
   max-width: 100%;
-  width: 40%;
+  width: 50%;
 }
 
 @media (min-width: 1024px) {
@@ -90,6 +92,7 @@ header {
 }
 
 header .localisation {
+  margin-top: 5px;
   background: #DEDEDE;
 }
 
@@ -102,9 +105,10 @@ header .localisation input {
   width: 125px;
   padding: 15px 0;
   border: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-family: 'Roboto';
   text-align: center;
-  font-size: 15px;
+  font-size: 13px;
   background: #DEDEDE;
 }
 
@@ -154,14 +158,15 @@ header .filtre .txt_header p {
 }
 
 header .filtre .txt_header button {
-  padding: 5% 6%;
-  height: 60px;
+  padding: 0 7%;
+  height: 45px;
   border: transparent;
   border-radius: 25px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   color: white;
   font-size: 14px;
+  font-weight: bold;
 }
 
 header .filtre .txt_header button:hover {
@@ -345,7 +350,7 @@ header .filtre .txt_header button:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  min-height: 45vh;
+  min-height: 35vh;
   margin: 5% 0;
   border-radius: 20px;
   background-size: cover !important;
@@ -424,11 +429,11 @@ header .filtre .txt_header button:hover {
 }
 
 #restaurants article .titre_du_menu_et_like .coeurs {
-  padding-right: 3%;
+  padding-right: 8%;
 }
 
 #restaurants article .titre_du_menu_et_like .coeurs i {
-  font-size: 35px;
+  font-size: 22px;
 }
 
 #restaurants article .titre_du_menu_et_like .coeurs i:first-of-type {
@@ -453,12 +458,13 @@ header .filtre .txt_header button:hover {
 }
 
 #restaurants article .titre_du_menu_et_like .coeurs i:last-of-type {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  -webkit-transform: scale(0);
+          transform: scale(0);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  color: #9356DC;
-  -webkit-transform: scale(0);
-          transform: scale(0);
 }
 
 footer {
@@ -631,7 +637,7 @@ footer ul li a {
   margin: 0 0 10% 2%;
   font-family: 'Shrikhand', cursive;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 @media (max-width: 320px) {
@@ -647,13 +653,16 @@ footer ul li a {
 }
 
 .menu_du_restaurant .titre_du_menu_et_like i {
-  font-size: 35px;
-}
-
-.menu_du_restaurant .titre_du_menu_et_like i:first-of-type {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 20px;
+  font-size: 25px;
+}
+
+@media (min-width: 1440px) {
+  .menu_du_restaurant .titre_du_menu_et_like i {
+    font-size: 35px;
+  }
 }
 
 .menu_du_restaurant .titre_du_menu_et_like i:first-of-type:active + i:last-of-type {
@@ -674,9 +683,10 @@ footer ul li a {
 
 .menu_du_restaurant .titre_du_menu_et_like i:last-of-type {
   background-clip: text;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text !important;
   color: transparent;
-  color: #9356DC;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   -webkit-transform: scale(0);
           transform: scale(0);
 }
@@ -768,7 +778,7 @@ footer ul li a {
 }
 
 .menu_du_restaurant article .plat_menu .intitule p {
-  font-size: 12px;
+  font-size: 14px;
   min-width: 180px;
   white-space: nowrap;
   overflow: hidden;
@@ -776,13 +786,7 @@ footer ul li a {
 }
 
 .menu_du_restaurant article .plat_menu .intitule h3 {
-  font-size: 16px;
-}
-
-@media (max-width: 425px) {
-  .menu_du_restaurant article .plat_menu .intitule h3 {
-    font-size: 11px;
-  }
+  font-size: 17px;
 }
 
 .menu_du_restaurant article .plat_menu p.prix {
@@ -968,8 +972,8 @@ a.anim-scale:hover {
             transform: scale(0);
   }
   100% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
@@ -981,8 +985,8 @@ a.anim-scale:hover {
             transform: scale(0);
   }
   100% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 /*# sourceMappingURL=style.css.map */
